@@ -1,13 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package practicainterfaces;
-
-/**
- *
- * @author Jhon Bellaizac
- */
-public class Acuatico {
+public class Acuatico extends Vehiculo implements Vela{
     
 }
