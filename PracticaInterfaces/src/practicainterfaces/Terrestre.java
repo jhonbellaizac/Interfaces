@@ -1,13 +1,21 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package practicainterfaces;
-
-/**
- *
- * @author Jhon Bellaizac
- */
-public class Terrestre {
+public class Terrestre extends Vehiculo implements Motor{
     
-}
+    private int cantidadLlantas;
+    private String uso;
+
+    public Terrestre(int cantidadLlantas, String uso, int velocidadActual, int velocidadMaxima) {
+        super(velocidadActual, velocidadMaxima);
+        this.cantidadLlantas = cantidadLlantas;
+        this.uso = uso;
+    }
+    
+    
+    public int calcularRevolucionesMotor (int fuerza, int radio){
+        return fuerza * radio;
+    }
+
+    
+    }
+    
+
